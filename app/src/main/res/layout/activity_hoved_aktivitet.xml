@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#282828"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fahadali.galgespilfragmenteret.HovedAktivitet">
+
+
+    <TextView
+        android:id="@+id/øversteBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9b9b9b"
+        android:fontFamily="casual"
+        android:text="Tør du fortsætte?"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/fragment_indhold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/nedersteBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9b9b9b"
+        android:fontFamily="casual"
+        android:text="18+"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
