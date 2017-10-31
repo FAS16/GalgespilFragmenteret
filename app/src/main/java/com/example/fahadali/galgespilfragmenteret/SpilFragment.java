@@ -4,6 +4,7 @@ package com.example.fahadali.galgespilfragmenteret;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.InputFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ public class SpilFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_spil, container, false);
 
         gætteFelt = view.findViewById(R.id.gætteFelt_editText);
+        gætteFelt.setFilters(new InputFilter[]{new InputFilter.AllCaps(){}});
         grafik = view.findViewById(R.id.grafik_imageView);
         info = view.findViewById(R.id.info_textView);
         brugteBogstaver = view.findViewById(R.id.brugteBogstaver_textView);
