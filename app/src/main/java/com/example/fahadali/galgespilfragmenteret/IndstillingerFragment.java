@@ -1,18 +1,15 @@
 package com.example.fahadali.galgespilfragmenteret;
 
 
-import android.content.SharedPreferences;
+import android.app.Fragment;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-import static android.content.Context.MODE_PRIVATE;
 
 public class IndstillingerFragment extends Fragment implements CompoundButton.OnCheckedChangeListener {
 
@@ -36,8 +33,8 @@ public class IndstillingerFragment extends Fragment implements CompoundButton.On
 
 
         if(b){
-            HovedAktivitet.øversteBanner.setBackgroundColor(Color.parseColor("#FFB31C1C"));
-            HovedAktivitet.nedersteBanner.setBackgroundColor(Color.parseColor("#FFB31C1C"));
+            HovedAktivitet.øversteBanner.setBackgroundColor(Color.parseColor("#991818"));
+            HovedAktivitet.nedersteBanner.setBackgroundColor(Color.parseColor("#991818"));
             rødeBannere = true;
         }
         else{

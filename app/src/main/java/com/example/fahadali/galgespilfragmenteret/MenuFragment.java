@@ -1,9 +1,8 @@
 package com.example.fahadali.galgespilfragmenteret;
 
 
-import android.content.Intent;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +35,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 
         if(view == startKnap){
             getFragmentManager().beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
                     .replace(R.id.fragment_indhold, new SpilFragment())
                     .addToBackStack(null)
                     .commit();
@@ -44,7 +43,6 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 
         if(view == indstillingerKnap){
             getFragmentManager().beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.fragment_indhold, new IndstillingerFragment())
                     .addToBackStack(null)
                     .commit();
@@ -52,7 +50,6 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 
         if(view == hjælpKnap){
             getFragmentManager().beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.fragment_indhold, new HjaelpFragment())
                     .addToBackStack(null)
                     .commit();
